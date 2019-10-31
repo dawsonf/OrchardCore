@@ -33,7 +33,6 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton<ILocalizationFileLocationProvider, ContentRootPoFileLocationProvider>();
             services.AddSingleton<ILocalizationManager, LocalizationManager>();
             services.AddSingleton<IStringLocalizerFactory, PortableObjectStringLocalizerFactory>();
-
             services.AddSingleton<IHtmlLocalizerFactory, PortableObjectHtmlLocalizerFactory>();
 
             if (setupAction != null)
